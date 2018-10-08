@@ -10,6 +10,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const LessPluginAutoPrefix = require("less-plugin-autoprefix");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
+const FailOnErrorsPlugin = require('fail-on-errors-webpack-plugin');
 const path = require("path");
 
 const redashBackend = process.env.REDASH_BACKEND || "http://localhost:5000";
@@ -222,6 +223,11 @@ if (process.env.DEV_SERVER_HOST) {
 
 if (process.env.NODE_ENV === "production") {
   config.output.filename = "[name].[chunkhash].js";
+  config.plugins.push(
+    new FailOnErrorsPlugin({
+      failOnErrors: true,
+    })
+  );
   config.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,

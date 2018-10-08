@@ -100,6 +100,7 @@
     "eslint-plugin-react": "^7.7.0",
     "estraverse": "^4.2.0",
     "extract-text-webpack-plugin": "^3.0.1",
+    "fail-on-errors-webpack-plugin": "^2.1.0",
     "file-loader": "^1.1.4",
     "html-webpack-plugin": "^2.30.1",
     "less": "^2.7.3",
