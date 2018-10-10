@@ -25,7 +25,8 @@ jobs:
       - run:
           name: Build Docker Images
           command: |
-            set -x
+            set -ex
+            docker-compose build
             docker-compose up -d
             sleep 10
       - run:
@@ -38,7 +39,7 @@ jobs:
           name: Copy Test Results
           command: |
             mkdir -p /tmp/test-results/unit-tests
-            docker cp tests:/app/coverage.xml ./coverage.xml 
+            docker cp tests:/app/coverage.xml ./coverage.xml
             docker cp tests:/app/junit.xml /tmp/test-results/unit-tests/results.xml
       - store_test_results:
           path: /tmp/test-results
@@ -63,7 +64,9 @@ jobs:
       - checkout
       - run: .circleci/update_version
       - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - run: docker build -t redash/redash:$(.circleci/docker_tag) .
+      - run: |
+          set -ex
+          docker build -t redash/redash:$(.circleci/docker_tag) .
       - run: docker push redash/redash:$(.circleci/docker_tag)
   integration-tests:
     working_directory: ~/redash
