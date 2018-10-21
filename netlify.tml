@@ -1,0 +1,29 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://demo.redash.io/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "https://demo.redash.io/login"
+  status = 200
+
+[[redirects]]
+  from = "/logout"
+  to = "https://demo.redash.io/logout"
+  status = 200
+
+[[redirects]]
+  from = "/status.json"
+  to = "https://demo.redash.io/status.json"
+  status = 200
+
+[[redirects]]
+  from = "/static/*"
+  to = "/:splat"
+  status = 200
