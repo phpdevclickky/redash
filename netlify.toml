@@ -29,6 +29,11 @@
   status = 200
 
 [[redirects]]
+  from = "/static/server*"
+  to = "https://demo.redash.io/static/server:splat"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
