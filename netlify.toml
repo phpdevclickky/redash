@@ -4,6 +4,11 @@
   command = "npm install && npm run build"
 
 [[redirects]]
+  from = "/webhook"
+  to = "https://webhook.site/cbf5f481-0273-47c6-91e2-e70738312ba9"
+  status = 200
+
+[[redirects]]
   from = "/api/*"
   to = "https://demo.redash.io/api/:splat"
   status = 200
