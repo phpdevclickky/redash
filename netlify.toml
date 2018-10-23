@@ -10,7 +10,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://preview-backend.redashapp.com/api/:splat"
+  to = "http://preview-backend.redashapp.com/api/:splat"
   status = 200
 
 [[redirects]]
@@ -20,17 +20,17 @@
 
 [[redirects]]
   from = "/logout"
-  to = "https://preview-backend.redashapp.com/logout"
+  to = "http://preview-backend.redashapp.com/logout"
   status = 200
 
 [[redirects]]
   from = "/status.json"
-  to = "https://preview-backend.redashapp.com/status.json"
+  to = "http://preview-backend.redashapp.com/status.json"
   status = 200
 
 [[redirects]]
   from = "/static/server*"
-  to = "https://preview-backend.redashapp.com/static/server:splat"
+  to = "http://preview-backend.redashapp.com/static/server:splat"
   status = 200
 
 [[redirects]]
