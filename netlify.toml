@@ -10,27 +10,27 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://demo.redash.io/api/:splat"
+  to = "https://preview-backend.redashapp.com/api/:splat"
   status = 200
 
 [[redirects]]
   from = "/login"
-  to = "https://demo.redash.io/login"
+  to = "https://preview-backend.redashapp.com/login"
   status = 200
 
 [[redirects]]
   from = "/logout"
-  to = "https://demo.redash.io/logout"
+  to = "https://preview-backend.redashapp.com/logout"
   status = 200
 
 [[redirects]]
   from = "/status.json"
-  to = "https://demo.redash.io/status.json"
+  to = "https://preview-backend.redashapp.com/status.json"
   status = 200
 
 [[redirects]]
   from = "/static/server*"
-  to = "https://demo.redash.io/static/server:splat"
+  to = "https://preview-backend.redashapp.com/static/server:splat"
   status = 200
 
 [[redirects]]
