@@ -24,13 +24,13 @@
   status = 200
 
 [[redirects]]
-  from = "/static/*"
-  to = "/:splat"
+  from = "/static/server*"
+  to = "https://demo.redash.io/static/server:splat"
   status = 200
 
 [[redirects]]
-  from = "/static/server*"
-  to = "https://demo.redash.io/static/server:splat"
+  from = "/static/*"
+  to = "/:splat"
   status = 200
 
 [[redirects]]
