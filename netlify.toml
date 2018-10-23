@@ -15,7 +15,7 @@
 
 [[redirects]]
   from = "/login"
-  to = "https://login-proxy-xuelbjbiff.now.sh/login"
+  to = "https://redash-preview-login.now.sh/login"
   status = 200
 
 [[redirects]]
